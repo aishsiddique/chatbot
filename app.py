@@ -8,11 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Initialize Groq client
-api_key = os.getenv("GROQ_API_KEY")
-if not api_key:
-    st.error("GROQ_API_KEY not found in .env file. Please add it to proceed.")
-    st.stop()
-
+api_key = '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'
 client = Groq(api_key=api_key)
 
 # Set page configuration
